@@ -10,33 +10,49 @@ Home{% endblock titile %}
 {% endblock msg %}
 {% block hero %}
 <style>
-  .hero-container {
-      margin-right: 50px; /* Adjust this value as needed */
-  }
-
-  #heriufwtwoerte-heading {
-      color: #FF9900; /* Color for heading */
-      transition: color 0.5s ease; /* Transition duration and easing */
-  }
-
-  #heriufwtwoerte-content {
-      color: #00CC66; /* Color for typed content */
-      transition: color 0.5s ease; /* Transition duration and easing */
-  }
-
-  .hero-container:hover #heriufwtwoerte-heading {
-      color:hsl(189, 100%, 50%)/* Color change for heading on hover */
-  }
-
-  .hero-container:hover #heriufwtwoerte-content {
-      color: #4af107; /* Color change for typed content on hover */
-  }
-</style>
+    .hero-container {
+        margin-right: 50px; /* Adjust this value as needed */
+    }
+  
+    #heriufwtwoerte-heading {
+        color: #FF9900;
+        transition: color 0.5s ease;
+    }
+  
+    #heriufwtwoerte-content {
+        color: #00CC66;
+        transition: color 0.5s ease;
+    }
+  
+    .hero-container:hover #heriufwtwoerte-heading {
+        color: hsl(189, 100%, 50%);
+    }
+  
+    .hero-container:hover #heriufwtwoerte-content {
+        color: #4af107;
+    }
+  
+    /* Add responsive styles */
+    @media (max-width: 768px) {
+      .hero-container {
+        margin: 0 auto; /* Center the content horizontally */
+        text-align: center; /* Center the text within the container */
+      }
+  
+      #heriufwtwoerte-heading {
+        font-size: 24px; /* Adjust font size for smaller screens */
+      }
+  
+      #heriufwtwoerte-content {
+        font-size: 14px; /* Adjust font size for smaller screens */
+      }
+    }
+  </style>
 
 <section id="hero" class="d-flex flex-column justify-content-center align-items-end">
   <div class="hero-container" data-aos="fade-in">
       <h1 class="text-right" id="heriufwtwoerte-heading">Arunadithyan S</h1>
-      <p class="text-right" id="heriufwtwoerte-content">I'm <span class="typed" data-typed-items="a Developer,a Freelancer,a Metallurgist,an Analyst,an Event-Manager,a Python Developer,a Java Developer"></span></p>
+      <p class="text-right" id="heriufwtwoerte-content">I'm <span class="typed" data-typed-items="a Developer,a Freelancer,a Metallurgist,an Analyst,an Event-Manager,a Python Developer, a  Java   Developer"></span></p>
   </div>
 </section><!-- End Hero -->
 
