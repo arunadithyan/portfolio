@@ -1,0 +1,44 @@
+{% extends 'basic.html' %}
+{% block titile %}
+Home{% endblock titile %}
+{% block msg %}
+{% for message  in messages %}
+<div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+    <strong>{{message}}</strong> 
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>{% endfor %}
+{% endblock msg %}
+{% block hero %}
+<style>
+  .hero-container {
+      margin-right: 80px; /* Adjust this value as needed */
+  }
+
+  #heriufwtwoerte-heading {
+      color: #FF9900; /* Color for heading */
+      transition: color 0.5s ease; /* Transition duration and easing */
+  }
+
+  #heriufwtwoerte-content {
+      color: #00CC66; /* Color for typed content */
+      transition: color 0.5s ease; /* Transition duration and easing */
+  }
+
+  .hero-container:hover #heriufwtwoerte-heading {
+      color:hsl(189, 100%, 50%)/* Color change for heading on hover */
+  }
+
+  .hero-container:hover #heriufwtwoerte-content {
+      color: #4af107; /* Color change for typed content on hover */
+  }
+</style>
+
+<section id="hero" class="d-flex flex-column justify-content-center align-items-end">
+  <div class="hero-container" data-aos="fade-in">
+      <h1 class="text-right" id="heriufwtwoerte-heading">Arunadithyan S</h1>
+      <p class="text-right" id="heriufwtwoerte-content">I'm <span class="typed" data-typed-items="a Developer,a Freelancer,a Metallurgist,an Analyst,an Event-Manager,a Python Developer,a Java Developer"></span></p>
+  </div>
+</section><!-- End Hero -->
+
+{% endblock hero %}
+
